@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <!--This div specifies the container area for the bootstrap alert.-->
+    <div id="alert-container"></div>
+    <br>
+    <!--This div is thee container for the game header card, it is one-third page width-->
+    <div class="container col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <!--This div holds the players chosen mark, it is one third of outer div-->
+                    <div class="h-100 col-sm-4 border">
+                        <p>MARK</p>
+                        <p>Player 1:  <span id="mark-1">_</span> </p>
+                        <p>Player 2:  <span id="mark-2">_</span> </p>
+                    </div>
+                    <!--This div holds the start and clear buttons and shows the current turn-->
+                    <!--This div is two-thirds the width of the outer div-->
+                    <div class="col-sm-8 border">
+                        <button id="start"  class="btn btn-primary" type="button">Start</button>
+                        <button id="clear"   class="btn btn-secondary" type="button">Clear</button>
+                        <p>Turn: <span id="turn">Player _</span></p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+        
+    </div>
+    <br><br>
+    <!--This div serves as the parent container for all of the game buttons.-->
+    <!--The id will be used to create a listener function on all 9 game buttons.-->
+    <div id="theDude">
+    <div class="container  col-sm-4">
+        <!--The first row of buttons-->
+        <div class="row">
+          <div class="h-100 col-sm border">
+            <button id="button1" type="button" class="btn h-100 w-100 btn-primary btn-lg btn-block">_</button>
+          </div>
+          <div class="col-sm border">
+            <button id="button2"   type="button" class="btn h-100 w-100 btn-primary btn-lg btn-block">_</button>
+          </div>
+          <div class="col-sm border">
+            <button  id="button3"   type="button" class="btn h-100 w-100 btn-primary btn-lg btn-block">_</button>
+          </div>
+        </div>
+      </div>
+
+      <!--The second row of buttons-->
+      <div class="container col-sm-4">
+        <div class="row">
+          <div class="col-sm border">
+            <button id="button4"   type="button" class="btn h-100 w-100 btn-primary btn-lg btn-block">_</button>
+          </div>
+          <div class="col-sm border">
+            <button id="button5"    type="button" class="btn h-100 w-100 btn-primary btn-lg btn-block">_</button>
+          </div>
+          <div class="col-sm border">
+            <button id="button6"    type="button" class="btn h-100 w-100 btn-primary btn-lg btn-block">_</button>
+          </div>
+        </div>
+      </div>
+      <!--The third row of buttons-->
+      <div class="container col-sm-4">
+        <div class="row">
+          <div class="col-sm border">
+            <button id="button7"    type="button" class="btn h-100 w-100 btn-primary btn-lg btn-block">_</button>
+          </div>
+          <div class="col-sm border">
+            <button id="button8"    type="button" class="btn h-100 w-100 btn-primary btn-lg btn-block">_</button>
+          </div>
+          <div class="col-sm border">
+            <button id="button9"    type="button" class="btn h-100 w-100 btn-primary btn-lg btn-block">_</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+
+        <script src="tictactoe.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
